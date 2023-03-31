@@ -1,0 +1,63 @@
+.recommended {
+  background-color: var(--recommended-bg-color);
+
+  padding: 200px;
+}
+
+.recommended article h1 {
+  font-size: 40px;
+  font-family: var(--second-font);
+  margin-bottom: 40px;
+  color: var(--heading-text-color);
+}
+
+.recommended article span.border {
+  width: 100px;
+  height: 3px;
+  background-color: var(--heading-divider-color);
+}
+
+.recommended .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  gap: 20px;
+}
+
+.recommended .cards .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 15px var(--quote-shadow-color);
+
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--quote-border-color);
+}
+
+.recommended .cards .card > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateY(-50%);
+}
+
+.recommended .cards .card > p {
+  text-align: end;
+}
+.recommended .cards .card > h3 {
+  text-align: end;
+  color: var(--quote-subheading-color);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+.user > img {
+  margin-right: 20px;
+  width: 30px;
+}
