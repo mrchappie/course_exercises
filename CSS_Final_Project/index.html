@@ -12,16 +12,18 @@
   <body class="body__container">
     <nav class="navigation">
       <ul>
-        <li class="about center center"><a href="#homepage">ABOUT</a></li>
-        <li class="our__courses center"><a href="#courses">OUR COURSES</a></li>
-        <li class="how_it_works center">
+        <li class="about__link center center"><a href="#homepage">ABOUT</a></li>
+        <li class="our__courses__link center">
+          <a href="#courses">OUR COURSES</a>
+        </li>
+        <li class="how_it_works__link center">
           <a href="#how_it_works">HOW IT WORKS</a>
         </li>
-        <li class="contact center"><a href="#contact">CONTACT US</a></li>
+        <li class="contact__link center"><a href="#contact">CONTACT US</a></li>
       </ul>
     </nav>
     <main class="main__container">
-      <section class="homepage">
+      <section id="homepage" class="homepage">
         <div class="illustration center">
           <img
             src="./img/section1_Illustration.png"
@@ -87,7 +89,7 @@
           </section>
         </section>
       </section>
-      <section class="our__robots center">
+      <section id="our__robots" class="our__robots center">
         <article class="center">
           <h1>OUR ROBOTS</h1>
           <span class="border"></span>
@@ -104,7 +106,7 @@
           </div>
         </section>
       </section>
-      <section class="how__works center">
+      <section id="how_it_works" class="how__works center">
         <article class="center">
           <h1>HOW IT WORKS</h1>
           <span class="border"></span>
@@ -225,7 +227,7 @@
           </div>
         </section>
       </section>
-      <section class="courses center">
+      <section id="courses" class="courses center">
         <article class="center">
           <h1>START LEARNING AND DEVELOPING ROBOTS TODAY</h1>
           <span class="border"></span>
@@ -291,6 +293,59 @@
           </div>
         </section>
       </section>
+      <section id="contact" class="contact__us__section center">
+        <article class="contact__us__heading center">
+          <h1>Contact Us</h1>
+          <span class="border"></span>
+        </article>
+        <section class="contact__us__form flex-row">
+          <div class="contact__us__inputs flex-column">
+            <input type="text" name="first_name" placeholder="First Name" />
+            <input type="text" name="last_name" placeholder="Last Name" />
+            <input type="phone" name="phone" placeholder="Phone Number" />
+          </div>
+          <div class="contact__us__textarea flex-column">
+            <textarea
+              name="message"
+              placeholder="Your message here.."
+              cols="60"
+              rows="3"
+            ></textarea>
+            <button type="submit" class="contact__form__button">Send</button>
+          </div>
+        </section>
+        <img
+          src="./img/section8_illustration.png"
+          alt=""
+          class="contact__section__illustration"
+        />
+        <button class="whatsapp_btn center">
+          <img src="./img/section1_whatsapp.png" alt="whatsapp logo" />
+        </button>
+      </section>
     </main>
+
+    <footer class="page__footer flex-row">
+      <ul class="page__footer__links flex-row">
+        <li><a href="#homepage">Home Page</a></li>
+        <li><a href="#our__robots">Our Robots</a></li>
+        <li><a href="#how_it_works">How it Works</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <ul class="page__footer__socials flex-row">
+        <li>
+          <a href=""><img src="./img/section8_twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./img/section8_youtube.png" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="./img/section8_facebook.png" alt="" /></a>
+        </li>
+      </ul>
+      <ul class="page__footer__copyrights">
+        <li>&copy&nbsp;All rights reserved</li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -84,7 +84,8 @@ Colors
  - inputs + textarea border color: #eaeaec
  - button:
 	- background: linear gradient #ea0599, #9a0f98
-	- hover: horizontally scale to right edge of textarea
+	- hover: horizontally scale to right 
+	edge of textarea
  
  Section 9
  - background: #39065a

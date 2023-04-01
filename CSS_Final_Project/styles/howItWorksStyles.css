@@ -19,7 +19,7 @@
 
 .how__works .cards {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(var(--grid-4-columns), 200px);
   gap: 100px;
 }
 

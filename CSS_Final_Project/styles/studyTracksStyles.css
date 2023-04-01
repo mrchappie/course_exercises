@@ -1,7 +1,4 @@
 .study__tracks__container {
-  width: 1500px;
-  margin: 100px 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +7,7 @@
 }
 
 .study__tracks__container article {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .study__tracks__container article p {
@@ -23,6 +20,8 @@
   font-family: var(--second-font);
   margin-bottom: 40px;
   color: var(--heading-text-color);
+
+  text-align: center;
 }
 
 .study__tracks span.border {
@@ -33,7 +32,7 @@
 
 .study__tracks .cards {
   display: grid;
-  grid-template-columns: repeat(4, 350px);
+  grid-template-columns: repeat(var(--grid-4-columns), 350px);
   grid-template-rows: max-content;
   place-content: center;
   gap: 20px;
