@@ -20,7 +20,7 @@
 
 .our__robots .cards {
   display: grid;
-  grid-template-columns: repeat(var(--grid-3-columns), 400px);
+  grid-template-columns: repeat(var(--grid-3-columns), minmax(300px, 400px));
   gap: 50px;
 }
 
@@ -34,4 +34,10 @@
 
 .our__robots .cards .card img:hover {
   scale: 1.15;
+}
+
+@media only screen and (max-width: 480px) {
+  .our__robots {
+    padding: 20px;
+  }
 }

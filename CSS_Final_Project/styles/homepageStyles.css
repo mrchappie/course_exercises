@@ -3,6 +3,58 @@
   place-items: center;
 }
 
+/*  */
+/* MOBILE MENU */
+/*  */
+
+.navigation__mobile__menu {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.navigation__mobile__menu > label {
+  background-color: red;
+  width: 100px;
+  height: 40px;
+}
+
+.mobile__menu__button {
+  width: 34px;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.navigation__mobile__links {
+  position: relative;
+  top: 60px;
+
+  display: none;
+}
+
+.mobile__menu__button:hover + .navigation__mobile__links {
+  display: flex;
+}
+
+.navigation__mobile__links > ul li:hover {
+  border-bottom: 2px solid var(--hover-active);
+}
+
+.navigation__mobile__links > ul li {
+  border-bottom: 2px solid transparent;
+}
+
+.navigation__mobile__links > ul li a {
+  padding: 10px 15px;
+}
+
+/*  */
+/* NAVIGATION */
+/*  */
+
 .navigation {
   width: 100%;
   height: 60px;
@@ -14,7 +66,7 @@
   z-index: 1;
 }
 
-.navigation ul {
+.navigation > ul {
   display: flex;
   width: 80%;
   align-items: center;
@@ -25,21 +77,25 @@
   padding: 0;
 }
 
-.navigation ul li {
+.navigation > ul li {
   margin-right: 30px;
   border-bottom: 2px solid transparent;
 }
 
-.navigation ul li:hover {
+.navigation > ul li:hover {
   border-bottom: 2px solid var(--hover-active);
 }
 
-.navigation ul li a {
+.navigation > ul li a {
   text-decoration: none;
   color: var(--white);
 
   padding: 20px 20px 10px;
 }
+
+/*  */
+/* PAGE CONTENT */
+/*  */
 
 .homepage {
   background: linear-gradient(to left, var(--linear-grad-first));
@@ -89,7 +145,7 @@
   background-color: var(--button-bg);
   color: var(--white);
   font-weight: 300;
-  border: none;
+  border: 2px solid var(--button-bg);
   outline: none;
   border-radius: 40px;
 }
@@ -130,4 +186,55 @@
 
 .whatsapp_btn img {
   width: 30px;
+}
+
+/*  */
+/* RESPONSIVITY */
+/*  */
+@media only screen and (max-width: 480px) {
+  .navigation__mobile__menu {
+    display: block;
+  }
+
+  .navigation > ul {
+    display: none;
+  }
+
+  .homepage {
+    grid-template-columns: 1fr;
+
+    padding: 0;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  .homepage__content {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homepage__content > * {
+    margin: 10px 0;
+  }
+
+  .homepage__content h1 {
+    font-size: 40px;
+    text-indent: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .all__courses {
+    padding: 10px 30px;
+  }
+
+  .show__more {
+    padding: 10px 30px;
+  }
 }

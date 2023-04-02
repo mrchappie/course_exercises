@@ -33,3 +33,21 @@
 .questions__container .question p {
   margin-left: 15px;
 }
+
+@media only screen and (max-width: 480px) {
+  .questions > img {
+    display: none;
+  }
+
+  .questions__container {
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+  }
+
+  .questions__container > p {
+    text-align: center;
+    grid-column: 1;
+  }
+}

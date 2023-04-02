@@ -36,7 +36,7 @@
 
 .contact__us__inputs input {
   width: 300px;
-  padding: 5px;
+  padding: 5px 10px;
 
   background-color: var(--white);
   border: 2px solid var(--input-text-area-color);
@@ -51,7 +51,8 @@
   background-color: var(--white);
   border: 2px solid var(--input-text-area-color);
   border-radius: 5px;
-  padding: 20px;
+
+  padding: 5px 10px;
 }
 
 .contact__form__button {
@@ -77,4 +78,28 @@
 
 .contact__us__section .whatsapp_btn:hover {
   scale: 1.1;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact__section__illustration {
+    display: none;
+  }
+
+  .contact__us__section {
+    padding: 100px 20px;
+  }
+
+  .contact__us__form {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .contact__us__inputs {
+    margin: 0 auto;
+  }
+
+  .contact__us__form {
+    justify-self: center;
+  }
 }
