@@ -67,15 +67,15 @@
   padding: 10px 0;
 }
 
-.what__you__get .option {
+.what__you__get .course__option {
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: start;
 }
 
-.card > a {
-  color: var(--white);
+.courses .card .sign__up__button {
+  color: white;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 20px;
@@ -83,7 +83,7 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.card > a:hover {
+.courses .card .sign__up__button:hover {
   background-color: var(--button-bg);
 }
 
