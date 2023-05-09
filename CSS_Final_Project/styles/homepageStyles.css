@@ -68,17 +68,14 @@
 
 .navigation > ul {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: center;
+  justify-content: center;
 
   list-style: none;
-  margin: 0;
-  margin-left: 300px;
-  padding: 0;
 }
 
 .navigation > ul li {
-  margin-right: 30px;
   border-bottom: 2px solid transparent;
 }
 
@@ -119,11 +116,11 @@
 .illustration > img {
   width: 60%;
 
-  transition: scale 0.25s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .illustration > img:hover {
-  scale: 1.3;
+  transform: scale(1.2);
 }
 
 .homepage__content {
@@ -191,7 +188,23 @@
 /*  */
 /* RESPONSIVITY */
 /*  */
-@media only screen and (max-width: 480px) {
+@media (width < 1300px) {
+  .navigation > ul {
+    margin: 0;
+  }
+}
+
+@media (width < 1200px) {
+  .homepage {
+    grid-template-columns: 1fr;
+  }
+
+  .illustration {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .navigation__mobile__menu {
     display: block;
   }

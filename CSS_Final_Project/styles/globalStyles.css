@@ -75,9 +75,14 @@ body {
   overflow-x: hidden;
 }
 
-main > section {
+main > section:first-child {
   width: 100vw;
   min-height: 100vh;
+}
+
+main > section:not(:first-child) {
+  padding: 40px;
+  min-height: 70vh;
 }
 
 button {
@@ -94,6 +99,13 @@ a {
   text-decoration: none;
 }
 
+span.border {
+  width: 100px;
+  height: 3px;
+  background-color: var(--heading-divider-color);
+  margin-bottom: 40px;
+}
+
 .flex-row {
   display: flex;
   align-items: center;
@@ -107,12 +119,25 @@ a {
   justify-content: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
   :root {
     /* sets number of column to one for mobile */
-    --grid-2-columns: 2;
+    --grid-2-columns: 1;
     --grid-3-columns: 2;
     --grid-4-columns: 2;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    /* sets number of column to one for mobile */
+    --grid-2-columns: 1;
+    --grid-3-columns: 1;
+    --grid-4-columns: 1;
+  }
+
+  main > section:not(:first-child) {
+    padding: 40px 20px;
   }
 }
 
@@ -122,5 +147,9 @@ a {
     --grid-2-columns: 1;
     --grid-3-columns: 1;
     --grid-4-columns: 1;
+  }
+
+  main > section:not(:first-child) {
+    padding: 40px 10px;
   }
 }

@@ -12,14 +12,9 @@
   text-align: center;
 }
 
-.courses article span.border {
-  width: 100px;
-  height: 3px;
-  background-color: var(--heading-divider-color);
-}
-
 .courses .cards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -85,6 +80,12 @@
 
 .courses .card .sign__up__button:hover {
   background-color: var(--button-bg);
+}
+
+@media only screen and (max-width: 900px) {
+  .courses .cards {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 480px) {

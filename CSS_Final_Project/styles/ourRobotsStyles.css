@@ -12,12 +12,6 @@
   color: var(--heading-text-color);
 }
 
-.our__robots article span.border {
-  width: 100px;
-  height: 3px;
-  background-color: var(--heading-divider-color);
-}
-
 .our__robots .cards {
   display: grid;
   grid-template-columns: repeat(var(--grid-3-columns), minmax(300px, 400px));
